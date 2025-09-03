@@ -350,9 +350,69 @@ section{
     font-size: 1.6rem;
 }
 
+
+/*.....Certifications styling.....*/
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+}
+.certifications{
+    background-color: var(--bg-color);
+
+}
+.certifications h2{
+    color: var(--text-color);
+}
+.certifications-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+.certifications-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #787880;
+    height: 600px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+}
+.certifications-box:hover{
+    background: #161515;
+    color: #33c085;
+    border: 5px solid #221b83;
+    transform: scale(1.03);
+}
+.certifications-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+.certifications-info h4{
+    font-size: 4rem;
+    margin: 2rem 0;
+    font-weight: 600;
+}
+.certifications-info p{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+
+
+
+
 /*.....Contact styling.....*/
 .contact{
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
+    ;
 }
 .contact h2{
     margin-bottom: 3rem;
@@ -379,7 +439,7 @@ section{
 }
 
 .footer{
-    background-color:var(--second-bg-color);
+    background-color:var(--bg-color);
     padding: 50px 0;
 }
 footer .social-icons{
