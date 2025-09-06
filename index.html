@@ -6,6 +6,9 @@
     <title> Kiprono's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
 </head>
 <body>
     <header class="header">
@@ -19,16 +22,17 @@
             <a href="#about" >About</a>
             <a href="#services" >Services</a>
             <a href="#projects" >Projects</a>
+            <a href="#certifications" >Certifications</a>
             <a href="#contact" >Contact</a>
         </nav>
 
-        <button class="gradient-btn">Contact Me</button>
+        <a href="#contact" class="gradient-btn">Contact Me</a>
 
     </header>
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, It's <span>Kiprono</span></h1>
-            <h3>I am a <span>fullstack Developer</span> </h3>
+            <h3>I am a <span>fullstack Developer and DevOps Engineer</span> </h3>
             <p>I create beautiful and functional applications that help businesses grow.</p>
             <p>’m a passionate Fullstack Developer and DevOps Engineer with a strong foundation in AWS Cloud,
                 containerization (Docker/Kubernetes), and automation tools like Ansible and Terraform.
@@ -66,7 +70,7 @@
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="Dann3.jpg" alt="About Image">
+            <img src="dan.jpg" alt="About Image">
         </div>
         <div class="about-content">
             <h2>About Me</h2>
@@ -94,19 +98,7 @@
         </h2>
 
         <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <i class="bx bxl-figma"></i>
-                    <h4>UI / UX Design</h4>
-                    <p>
-                        I design intuitive and engaging user interfaces that enhance 
-                        user experience and drive customer satisfaction.
-                         My UI/UX designs focus on usability, accessibility,
-                         and visual appeal to ensure your product stands out and is easy to use.
-                    </p>
-                </div>
-            </div>
-
+            
             <div class="service-box">
                 <div class="service-info">
                     <i class='bx  bx-code'  ></i> 
@@ -144,6 +136,19 @@
                     </p>
                 </div>
             </div>
+            <div class="service-box">
+                <div class="service-info">
+                   <i class='bx bx-infinite'></i> 
+                    <h4>DevOps Best Pactices</h4>
+                    <p>
+                        I showcase hands-on projects with CI/CD pipelines, containerization, and orchestration.
+                         I’ve also worked with AWS cloud service, infrastructure as code (Terraform, Ansible), and monitoring
+                          & logging tools. These services highlight my ability to automate, scale, and manage 
+                          applications efficiently in production environments.
+                    </p>
+                </div>
+            </div>
+
         </div>
 
        
@@ -157,56 +162,56 @@
 
         <div class="projects-container">
             <div class="project-card">
-                <img src="project1.1.jpg" alt="Project 1">
                 <h4>ShuttleHub</h4>
-                <p>I built and deployed ShuttleHub, a full-stack badminton court booking platform. The frontend was developed in React.js and the backend in Node.js with MongoDB. I containerized the app using Docker and deployed it on AWS Elastic Beanstalk, enabling real-time booking with integrated payment support. This project helped me master containerization, cloud deployment, and CI/CD integration.
+                <p>I built and deployed ShuttleHub, a full-stack badminton court booking platform.
+                     The frontend was developed in React.js and the backend in Node.js with MongoDB.
+                      I containerized the app using Docker and deployed it on AWS Elastic Beanstalk,
+                       enabling real-time booking with integrated payment support. 
+                       This project helped me master containerization, cloud deployment, and CI/CD integration. <br>
+                          Check it out on <a href="https://shuttlehub.onrender.com/" class="doc-link">Render</a>.
                    
                     
                 </p>
             </div>
 
             <div class="project-card">
-                <img src="project2.1.jpg" alt="Project 2">
                 <h4>Pet Hub</h4>
                 <p>Have your pet checked by a vet without having to visit the clinic.
-                    I developed a full-stack application that allows users to book appointments with vets online.
+                    Here, is a full-stack application that allows users to book appointments with vets online.
                     The application is built using React.js for the frontend and Node.js for the backend.
                     It has a fully functional dashboard that allows the vets to manage their appointments and carry out other
                     functions. The application also has a payment gateway that allows users to pay for their appointments online.
-                    It is integrated with an AI chatbot that helps users navigate through the site.
-                    Interesting, right?
+                    
                   
                 </p>
             </div>
 
             <div class="project-card">
-                <img src="project1.1.jpg" alt="Project 1">
                 <h4>Travel companion</h4>
-                <p>Ever travelled at night? No one to show you aroud? No one to show you to the nearest "SAFE" hotes
-                    You don't know the nearest 24/7 hotels? Or rather your tour guide doing the least?
-                    Worry no more, Our Travel Companion got you. Interact with our full stack application o your new destination and enjoy your travel 
-                  
+                <p>The OnTheGo is an application that has a city's important amenities that are crucial for tourists.
+                    Ever travelled at night? No one to show you aroud? No one to show you to the nearest "SAFE" hotels
+                    OnTheGo is an a mobile application that enables you manouevre a city with ease, it also enables you book
+                    hotels and other important amenities. With our full stack application you easen your visitand you get to
+                     enjoy your travel. Check it out on <a href="https://travel-companion.onrender.com/" class="doc-link">Render</a>.
                 </p>
             </div>
 
             <div class="project-card">
-                <img src="project3.1.jpg" alt="Project 3">
-                <h4>e-commerce</h4>
-                <p>E-commerce is always the run-to project for all newbies, right?
-                    But have you met the e-commerce that has a fully functional
-                    payment gateway and a fully functional admin dashboard?
-                    This is the e-commerce project that I have worked on.
-                    It is a full-stack application that uses React.js for the frontend and Node.js for the backend.
-                    it is also integrated with with a AI chatbot that helps users navigate through the site. 
-                    Interesting, right?
+                <h4>Continuous Intergration with AWS CodeBuild</h4>
+                <p>Implemented a CI/CD pipeline using AWS CodeBuild to automate the build process for a web application. 
+                    The project focused on compressing application files into deployable artifacts and demonstrated integration 
+                    with GitHub for version control.
+                    This project enhanced my understanding of CI/CD practices and AWS services, enabling efficient and automated software delivery.
+                    Here is the <a href="AWS CodeBuild.pdf" target="_blank" class="doc-link">Documentation</a> (PDF).
                 </p>
             </div>
                 <div class="project-card">
-                <img src="project2.1.jpg" alt="Project 2">
-                <h4>Project Title 2</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Doloribus, voluptatum! Quisquam, cumque. 
-                    Doloremque, asperiores. Quasi, cumque.
+                <h4>DevOps Starter Project</h4>
+                <p>I built a Node.js app, containerized it with Docker, and automated the CI/CD pipeline using GitHub Actions. 
+                    The app is deployed on Kubernetes (Minikube) with declarative YAML manifests. This project showcases my skills
+                     in containerization, orchestration, and automation, while demonstrating how to bridge development and operations
+                      using modern DevOps practices.
+                    Here is the <a href="DevOps Starter Project.pdf" target="_blank" class="doc-link">Documentation</a> (PDF).
                 </p>
             </div>
 
@@ -271,7 +276,7 @@
                 <textarea name="message" id="message" cols="30" rows="10" 
                 placeholder="Your Message" required></textarea>
                 <input type="submit" value="Send Message" class
-                ="btn" onclick="window.location.href='mailto:kipronoyegon@example.com'; return false;">
+                ="btn" onclick="window.location.href='mailto:kipronoyegon50@gmail.com'; return false;">
             </div>
         </form>
      </section>
@@ -295,10 +300,7 @@
         </div>
         
         <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-             
+                        
             <li>
                 <a href="#services">Services</a>
             </li>
@@ -308,6 +310,8 @@
             <li>
                 <a href="#projects">Projects</a>
             </li>
+            <li>
+                <a href="#certifications">Certifications</a>
             <li>
                 <a href="#contact">Contact Me</a>
             </li>

@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: "Poppins";
+    font-family: "Roboto", sans-serif;
 }
 :root{
     --bg-color:#080808;
@@ -223,7 +223,7 @@ section{
 .about-img img:hover{
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
-                0 0 100px var(--main-color);
+                0 0 100px #6aa783;
 }
 .about-content h2{
     font-size: 7rem;
@@ -270,7 +270,8 @@ section{
     justify-content: center;
     align-items: center;
     background: var(--main-color);
-    height: 600px;
+    width: 106%;
+    height: 750px;
     border-radius: 3rem;
     cursor: pointer;
     border: 5px solid transparent;
@@ -334,7 +335,7 @@ section{
     transition: 0.3s ease;
 }
 .project-card:hover{
-    box-shadow: 0 0 25px var(--main-color),
+    box-shadow: 0 0 25px #170cbd,
                 0 0 50px var(--main-color);
     transform: scale(1.02);
 }
@@ -349,7 +350,10 @@ section{
 .project-card p{
     font-size: 1.6rem;
 }
-
+.doc-link{
+    color: #0cbd5c;
+    font-weight: 600;
+}
 
 /*.....Certifications styling.....*/
 .heading{
