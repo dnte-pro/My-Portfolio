@@ -9,6 +9,7 @@
 :root{
     --bg-color:#080808;
     --second-bg-color:#101010;
+    --third-bg-color:#170cbd;
     --text-color:white;
     --main-color:#553b2d;
 }
@@ -56,6 +57,15 @@ span{
     );
     background-clip: text;
     color: transparent;   
+}
+span2{
+    background: linear-gradient(
+        270deg,
+        #0cbd5c 10%,
+        #170cbd 100%
+    );
+    background-clip: text;
+    color: transparent;
 }
 .navbar a{
     font-size: 1.8rem;
@@ -140,14 +150,14 @@ section{
     font-size: 3rem;
     padding: 1rem;
     background: transparent;
-    border: 2px solif var(--main-color);
+    border: 2px solid var(--main-color);
     border-radius: 50%;
     color: var(--main-color);
     margin-top: 3rem 0.5rem;
     transition: 0.3s ease-in-out;
 }
 .social-icons a:hover{
-    background: var(--main-color);
+    background: #53e419;
     color: var(--text-color);
     transform: scale(1.2)translateY(-5px);
     box-shadow: 0 0 25px var(--main-color);
@@ -219,11 +229,13 @@ section{
     border: 50%;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
+    
 }
 .about-img img:hover{
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
                 0 0 100px #6aa783;
+    border-radius: 75%;
 }
 .about-content h2{
     font-size: 7rem;
@@ -513,6 +525,9 @@ footer .social-icons{
     .home-img img{
         width: 56vw;
     }
+    .about-img{
+        width: 52vw;
+    }
     .about{
         flex-direction: column-reverse;
     
@@ -521,9 +536,7 @@ footer .social-icons{
         text-align: center;
         margin:2rem 0;
     }
-    .about-img{
-        width: 52vw;
-    }
+    
     .contact form{
         flex-direction: column;
     }
