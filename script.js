@@ -6,7 +6,11 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
  
+// Sends an email using the form data via EmailJS
 
+
+//I used form spree to handle the form submission
+//but I left this here in case I want to switch back to emailjs
 function sendMail() {
     let parms = {
         name: document.getElementById("name").value,
