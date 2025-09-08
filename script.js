@@ -1,19 +1,25 @@
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+document.addEventListener('DOMContentLoaded', () => {
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () => {
-    // toggle the navbar
-    navbar.classList.toggle('active');
+    if (menuIcon && navbar) {
+        menuIcon.onclick = () => {
+            // toggle the navbar
+            navbar.classList.toggle('active');
 
-    // toggle between bx-menu and bx-x
-    if (navbar.classList.contains('active')) {
-        menuIcon.classList.remove('bx-menu');
-        menuIcon.classList.add('bx-x');
+            // toggle between bx-menu and bx-x
+            if (navbar.classList.contains('active')) {
+                menuIcon.classList.remove('bx-menu');
+                menuIcon.classList.add('bx-x');
+            } else {
+                menuIcon.classList.remove('bx-x');
+                menuIcon.classList.add('bx-menu');
+            }
+        };
     } else {
-        menuIcon.classList.remove('bx-x');
-        menuIcon.classList.add('bx-menu');
+        console.error('menuIcon or navbar not found in the DOM.');
     }
-};
+});
 
  
 

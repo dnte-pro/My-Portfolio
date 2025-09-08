@@ -531,7 +531,7 @@ footer .social-icons{
         width: 56vw;
     }
     .about-img{
-        width: 52vw;
+        display: none;
     }
     .about{
         flex-direction: column-reverse;
@@ -560,6 +560,9 @@ footer .social-icons{
     }
     .about-content h2 {
         font-size: 3rem;
+    }
+    .about-img{
+        display: none;
     }
     .heading {
         font-size: 3.5rem;
