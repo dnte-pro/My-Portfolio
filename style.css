@@ -548,6 +548,11 @@ footer .social-icons{
         max-width: 100%;
         padding: 0 1rem; /* prevent side overflow */
     }
+    .list{
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.2rem;
+    }
 }
 
 /* Extra small devices */
