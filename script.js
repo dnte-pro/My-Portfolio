@@ -2,11 +2,22 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
+    // toggle the navbar
     navbar.classList.toggle('active');
-}
+
+    // toggle between bx-menu and bx-x
+    if (navbar.classList.contains('active')) {
+        menuIcon.classList.remove('bx-menu');
+        menuIcon.classList.add('bx-x');
+    } else {
+        menuIcon.classList.remove('bx-x');
+        menuIcon.classList.add('bx-menu');
+    }
+};
+
  
-// Sends an email using the form data via EmailJS
+
+
 
 
 //I used form spree to handle the form submission
