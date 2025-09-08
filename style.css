@@ -540,4 +540,98 @@ footer .social-icons{
     .contact form{
         flex-direction: column;
     }
-} 
+}
+
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+    html {
+        font-size: 45%;
+    }
+    header {
+        padding: 2rem 5%;
+    }
+    section {
+        padding: 6rem 5%;
+        min-height: auto;
+    }
+    .home {
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+    .home-content h1 {
+        font-size: 4rem;
+    }
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+    .home-content p {
+        font-size: 1.2rem;
+    }
+    .home-img img {
+        width: 80vw;
+    }
+    .about {
+        gap: 2rem;
+    }
+    .about-img img {
+        width: 80vw;
+    }
+    .about-content h2 {
+        font-size: 3rem;
+    }
+    .about-content p {
+        font-size: 1.2rem;
+    }
+    .services-container,
+    .certifications-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .service-box,
+    .certifications-box,
+    .project-card {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    .service-info,
+    .certifications-info {
+        padding: 2rem 1rem;
+    }
+    .service-info h4,
+    .certifications-info h4 {
+        font-size: 2rem;
+    }
+    .service-info p,
+    .certifications-info p,
+    .project-card p {
+        font-size: 1.2rem;
+    }
+    .project-card img {
+        max-width: 90vw;
+    }
+    .heading {
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+    .contact form {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+    .contact form .input-box input,
+    .contact form textarea {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    .footer {
+        padding: 20px 0;
+    }
+    .footer ul {
+        font-size: 1.2rem;
+    }
+    .footer .copyright {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+}
