@@ -365,6 +365,17 @@ section{
 .project-card p{
     font-size: 1.6rem;
 }
+.project-card.is-hidden{
+    display: none;
+}
+.projects-toggle{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.projects-toggle .btn{
+    cursor: pointer;
+}
 .doc-link{
     color: #0cbd5c;
     font-weight: 600;

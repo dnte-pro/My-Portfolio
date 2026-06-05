@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     let menuIcon = document.querySelector('#menu-icon');
     let navbar = document.querySelector('.navbar');
+    const projectsContainer = document.querySelector('.projects-container');
+    const projectCards = document.querySelectorAll('.project-card');
+    const projectsToggleBtn = document.querySelector('#projects-toggle-btn');
+    const visibleProjectCount = 6;
 
     if (menuIcon && navbar) {
         menuIcon.onclick = () => {
@@ -19,28 +23,24 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.error('menuIcon or navbar not found in the DOM.');
     }
-});
 
- 
+    if (projectsContainer && projectsToggleBtn && projectCards.length > visibleProjectCount) {
+        const setProjectsExpanded = (expanded) => {
+            projectCards.forEach((card, index) => {
+                card.classList.toggle('is-hidden', !expanded && index >= visibleProjectCount);
+            });
 
+            projectsToggleBtn.textContent = expanded ? 'Show Less' : 'Show More';
+            projectsToggleBtn.setAttribute('aria-expanded', expanded.toString());
+        };
 
+        setProjectsExpanded(false);
 
-
-//I used form spree to handle the form submission
-//but I left this here in case I want to switch back to emailjs
-function sendMail() {
-    let parms = {
-        name: document.getElementById("name").value,
-        email : document.getElementById("email").value,
-        number: document.getElementById("number").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value
-    };
-    emailjs.send("service_yl2w5fy", "template_12iqqka", parms)
-        .then(function(response) {
-            alert("Message Sent Successfully");
-        })
-        .catch(function(error) {
-            alert("Failed to send message: " + error.text);
+        projectsToggleBtn.addEventListener('click', () => {
+            const isExpanded = projectsToggleBtn.getAttribute('aria-expanded') === 'true';
+            setProjectsExpanded(!isExpanded);
         });
-}
+    } else if (projectsToggleBtn) {
+        projectsToggleBtn.style.display = 'none';
+    }
+});
